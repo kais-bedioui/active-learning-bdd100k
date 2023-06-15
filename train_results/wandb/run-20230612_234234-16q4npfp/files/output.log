@@ -1,0 +1,593 @@
+Overriding model.yaml nc=80 with nc=4
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     24273  models.yolo.Detect                      [4, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 214 layers, 7030417 parameters, 7030417 gradients, 16.0 GFLOPs
+Transferred 343/349 items from /home/kais/workspace/pytorch-meetup/models/yolov5s.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.0005), 60 bias
+[34m[1mtrain: [39m[22mScanning /home/kais/workspace/pytorch-meetup/train/exp_random/labels/trai
+[34m[1mval: [39m[22mScanning /home/kais/workspace/pytorch-meetup/train/exp_random/labels/val.ca
+[34m[1mAutoAnchor: [39m[22m5.05 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Plotting labels to pytorch-demo/random_selection/labels.jpg...
+Image sizes 1280 train, 1280 val
+Using 8 dataloader workers
+Logging results to [1mpytorch-demo/random_selection
+Starting training for 50 epochs...
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+       0/49      6.58G     0.1085    0.06927    0.03911         41       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449    0.00359      0.297     0.0254    0.00604
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+       1/49      6.58G    0.08951    0.05192    0.02384         62       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.785     0.0537     0.0251     0.0064
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+       2/49      6.58G    0.08909    0.04057    0.02054        114       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.809     0.0848     0.0484     0.0134
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+       3/49      6.58G    0.08396    0.03933    0.01876         66       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.847     0.0921     0.0976      0.032
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+       4/49      6.58G    0.07675    0.03695    0.01983         31       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.834     0.0957     0.0764     0.0301
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+       5/49      6.58G    0.07141    0.03786    0.01737         55       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.744      0.193      0.128     0.0394
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+       6/49      6.58G    0.06936    0.03688    0.01524        112       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.773      0.159      0.168     0.0569
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+       7/49      6.58G    0.06671    0.03396    0.01514         45       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.721       0.18      0.157     0.0525
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+       8/49      6.58G    0.06288    0.03514    0.01521         60       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.789      0.175      0.193     0.0799
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+       9/49      6.58G    0.06032    0.03625    0.01384         79       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.384      0.265      0.185     0.0689
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+      10/49      6.58G    0.06056    0.03618    0.01139         71       1280: 1
+                 Class     Images  Instances          P          R      mAP50
+                   all        100        449      0.772       0.15      0.177     0.0684
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+      11/49      6.58G    0.06066    0.03595     0.0111         50       1280: 1
+                   all        100        449      0.223      0.289       0.22     0.0827
+                   all        100        449      0.223      0.289       0.22     0.0827
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+      12/49      6.58G    0.05774    0.03415    0.01206         70       1280:
+      12/49      6.58G    0.05875    0.03371    0.01166         83       1280:
+      12/49      6.58G    0.05957    0.03248    0.01225         43       1280:
+      12/49      6.58G     0.0588    0.03264    0.01289         83       1280:
+      12/49      6.58G    0.05855    0.03368    0.01236         48       1280:
+      12/49      6.58G    0.05842    0.03457    0.01228         81       1280:
+      12/49      6.58G    0.05828    0.03516    0.01297         60       1280:
+      12/49      6.58G     0.0583    0.03484    0.01247         48       1280:
+      12/49      6.58G    0.05827    0.03498    0.01245         72       1280: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size: 1
+To update EarlyStopping(patience=10) pass a new patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.
+Results saved to [1mpytorch-demo/random_selection[22mw patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.
+Results saved to [1mpytorch-demo/random_selection[22mw patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.
+Results saved to [1mpytorch-demo/random_selection[22mw patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.

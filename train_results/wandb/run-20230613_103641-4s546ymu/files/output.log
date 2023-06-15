@@ -1,0 +1,11 @@
+Dataset not found ⚠️, missing paths ['/home/kais/workspace/yolov5/train/exp_active_1/images']
+Traceback (most recent call last):
+  File "/home/kais/workspace/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/kais/workspace/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/kais/workspace/yolov5/train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "/home/kais/workspace/yolov5/utils/general.py", line 517, in check_dataset
+    raise Exception('Dataset not found ❌')
+Exception: Dataset not found ❌

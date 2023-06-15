@@ -1,0 +1,908 @@
+2023-06-13 12:40:59,212 INFO    MainThread:836891 [internal.py:wandb_internal():89] W&B internal server running at pid: 836891, started at: 2023-06-13 12:40:59.212359
+2023-06-13 12:40:59,213 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: check_version
+2023-06-13 12:40:59,214 INFO    WriterThread:836891 [datastore.py:open_for_write():77] open: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/run-duyjfwea.wandb
+2023-06-13 12:40:59,214 DEBUG   SenderThread:836891 [sender.py:send():235] send: header
+2023-06-13 12:40:59,214 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: check_version
+2023-06-13 12:40:59,285 DEBUG   SenderThread:836891 [sender.py:send():235] send: run
+2023-06-13 12:40:59,298 INFO    SenderThread:836891 [sender.py:_maybe_setup_resume():489] checking resume status for None/pytorch-demo/duyjfwea
+2023-06-13 12:40:59,790 INFO    SenderThread:836891 [dir_watcher.py:__init__():169] watching files in: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files
+2023-06-13 12:40:59,791 INFO    SenderThread:836891 [sender.py:_start_run_threads():809] run started: duyjfwea with start time 1686652858
+2023-06-13 12:40:59,791 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:40:59,791 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:40:59,792 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: run_start
+2023-06-13 12:40:59,796 DEBUG   HandlerThread:836891 [meta.py:__init__():36] meta init
+2023-06-13 12:40:59,796 DEBUG   HandlerThread:836891 [meta.py:__init__():50] meta init done
+2023-06-13 12:40:59,796 DEBUG   HandlerThread:836891 [meta.py:probe():210] probe
+2023-06-13 12:40:59,805 DEBUG   HandlerThread:836891 [git.py:repo():33] git repository is invalid
+2023-06-13 12:40:59,805 DEBUG   HandlerThread:836891 [meta.py:_save_pip():54] save pip
+2023-06-13 12:40:59,805 DEBUG   HandlerThread:836891 [meta.py:_save_pip():68] save pip done
+2023-06-13 12:40:59,805 DEBUG   HandlerThread:836891 [meta.py:_save_conda():75] save conda
+2023-06-13 12:41:00,792 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/conda-environment.yaml
+2023-06-13 12:41:00,792 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:41:00,792 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/requirements.txt
+2023-06-13 12:41:05,792 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:07,793 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/conda-environment.yaml
+2023-06-13 12:41:07,793 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:07,992 DEBUG   HandlerThread:836891 [meta.py:_save_conda():85] save conda done
+2023-06-13 12:41:07,992 DEBUG   HandlerThread:836891 [meta.py:probe():248] probe done
+2023-06-13 12:41:08,070 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:41:08,070 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:41:08,287 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:08,289 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2023-06-13 12:41:08,794 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-metadata.json
+2023-06-13 12:41:08,907 INFO    Thread-11 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1bq80v3r-wandb-metadata.json
+2023-06-13 12:41:09,794 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:11,794 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:13,795 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:15,796 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:17,796 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:19,797 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:21,797 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:23,335 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:41:23,336 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:41:23,798 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:25,799 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:27,799 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:27,994 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:41:29,800 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:30,715 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,715 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:30,715 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,716 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:30,716 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,716 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:30,716 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,716 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:30,716 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,716 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:30,716 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,716 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Labels_0_0.jpg with policy now
+2023-06-13 12:41:30,716 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,717 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Labels_0_1.jpg with policy now
+2023-06-13 12:41:30,717 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,717 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Labels_0_2.jpg with policy now
+2023-06-13 12:41:30,717 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,717 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Labels_0_3.jpg with policy now
+2023-06-13 12:41:30,717 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,717 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Labels_0_4.jpg with policy now
+2023-06-13 12:41:30,765 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,765 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Mosaics_0_0.jpg with policy now
+2023-06-13 12:41:30,765 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,765 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Mosaics_0_1.jpg with policy now
+2023-06-13 12:41:30,766 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:41:30,766 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Mosaics_0_2.jpg with policy now
+2023-06-13 12:41:30,800 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:41:30,800 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_3.jpg
+2023-06-13 12:41:30,800 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_4.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_1.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_0.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_1.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_0.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_2.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_2.jpg
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images
+2023-06-13 12:41:30,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media
+2023-06-13 12:41:30,854 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:41:30,854 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:30,854 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:31,403 INFO    Thread-12 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/3kjh0agf-media/images/Labels_0_0.jpg
+2023-06-13 12:41:31,456 INFO    Thread-16 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/2b63xtbd-media/images/Labels_0_4.jpg
+2023-06-13 12:41:31,562 INFO    Thread-17 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/bancdybo-media/images/Mosaics_0_0.jpg
+2023-06-13 12:41:31,653 INFO    Thread-15 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1z70qtdy-media/images/Labels_0_3.jpg
+2023-06-13 12:41:31,676 INFO    Thread-18 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/165y9tu4-media/images/Mosaics_0_1.jpg
+2023-06-13 12:41:31,708 INFO    Thread-13 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/126tjz1i-media/images/Labels_0_1.jpg
+2023-06-13 12:41:31,724 INFO    Thread-14 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/3i9ivccw-media/images/Labels_0_2.jpg
+2023-06-13 12:41:31,729 INFO    Thread-19 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/33luivru-media/images/Mosaics_0_2.jpg
+2023-06-13 12:41:31,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:31,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:41:33,801 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:35,802 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:37,803 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:38,547 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:41:38,547 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:41:39,804 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:41,804 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:43,805 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:45,806 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:45,970 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,972 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:45,973 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,973 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:45,973 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,973 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:45,973 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,973 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:45,973 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,974 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:45,974 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:41:45,974 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:41:45,974 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:41:46,806 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:41:47,807 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:49,808 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:51,808 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:53,809 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:53,809 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:41:53,810 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:41:55,810 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:57,811 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:41:58,212 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:41:59,812 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:01,207 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:42:01,207 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:01,207 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:01,813 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:01,813 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:42:03,813 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:05,814 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:07,815 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:09,060 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:42:09,061 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:42:09,815 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:11,816 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:13,817 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:15,818 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:16,417 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,419 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,419 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,419 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,419 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,419 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,419 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,420 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,420 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,420 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,420 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:42:16,420 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:16,420 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:16,818 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:42:17,818 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:19,819 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:21,820 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:23,821 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:24,236 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:42:24,237 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:42:25,821 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:27,822 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:28,396 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:42:29,823 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:31,824 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:31,919 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,920 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:31,920 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,921 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:31,921 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,922 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:31,922 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,922 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:31,922 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,922 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:31,922 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:42:31,922 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:31,922 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:32,824 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:42:33,824 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:35,825 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:37,826 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:39,473 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:42:39,473 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:42:39,826 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:41,827 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:43,827 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:45,828 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:47,671 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,673 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,673 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,673 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,673 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,674 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,674 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,674 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,674 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,674 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,674 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:42:47,675 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:42:47,675 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:42:47,829 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:47,829 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:42:49,830 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:51,830 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:53,831 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:54,642 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:42:54,643 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:42:55,832 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:57,833 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:42:58,605 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:42:59,833 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:01,834 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:03,072 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,072 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,072 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,072 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,072 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,073 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,073 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,073 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,073 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,074 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,074 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:43:03,074 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:03,074 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:03,835 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:03,835 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:43:05,836 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:07,836 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:09,837 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:09,889 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:43:09,890 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:43:11,838 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:13,838 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:15,839 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:17,840 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:19,007 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,008 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,008 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,008 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,008 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,008 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,008 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,008 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,008 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,009 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,010 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:43:19,010 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:19,010 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:19,841 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:19,841 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:43:21,841 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:23,842 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:25,145 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:43:25,145 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:43:25,843 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:27,844 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:28,799 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:43:29,845 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:31,845 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:33,846 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:35,280 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:43:35,280 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:35,281 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:35,847 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:35,847 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:43:37,847 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:39,848 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:40,347 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:43:40,347 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:43:41,849 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:43,850 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:45,850 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:47,851 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:49,852 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:50,879 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,880 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:50,880 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,881 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:50,881 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,881 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:50,882 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,882 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:50,882 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,882 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:50,882 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:43:50,882 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:43:50,882 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:43:51,853 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:51,853 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:43:53,853 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:55,557 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:43:55,557 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:43:55,854 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:57,854 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:43:58,984 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:43:59,855 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:01,856 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:03,857 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:05,857 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:06,491 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:44:06,491 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:06,492 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:06,858 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:44:07,858 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:09,859 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:10,815 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:44:10,815 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:44:11,860 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:13,861 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:15,862 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:17,862 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:19,863 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:21,864 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:22,732 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:44:22,732 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:22,732 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:22,864 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:44:23,865 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:25,865 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:26,074 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:44:26,074 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:44:27,866 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:29,185 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:44:29,867 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:31,868 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:33,868 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:35,869 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:37,870 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:38,455 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,456 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,456 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,456 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,456 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,457 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,457 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,457 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,457 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,457 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,457 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:44:38,457 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:38,457 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:38,870 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:44:39,870 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:41,331 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:44:41,331 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:44:41,871 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:43,872 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:45,873 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:47,873 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:49,874 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:51,875 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:53,876 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:54,501 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,503 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,503 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,503 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,503 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,503 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,504 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,504 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,504 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,504 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,504 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:44:54,504 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:44:54,504 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:44:54,876 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:44:55,876 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:56,588 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:44:56,588 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:44:57,877 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:44:59,383 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:44:59,878 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:01,879 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:03,880 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:05,880 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:07,881 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:09,882 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:10,406 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,407 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,408 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,408 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,408 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,409 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,409 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:45:10,409 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:10,409 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:10,882 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:45:11,777 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:45:11,777 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:45:11,882 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:13,883 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:15,884 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:17,885 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:19,885 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:21,886 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:23,887 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:25,887 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:26,424 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,425 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,425 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,425 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,425 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,425 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,425 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,425 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,426 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,426 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,427 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:45:26,427 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:26,427 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:26,888 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:45:27,003 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:45:27,003 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:45:27,888 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:29,578 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:45:29,889 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:31,890 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:33,890 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:35,891 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:37,892 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:39,893 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:41,893 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:42,266 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:45:42,266 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:45:42,516 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:45:42,517 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:42,517 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:42,894 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:45:43,894 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:45,895 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:47,895 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:49,896 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:51,897 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:53,898 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:55,899 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:57,547 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:45:57,547 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:45:57,899 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:45:58,363 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,365 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,365 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,366 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,367 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,367 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,367 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,367 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,367 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,367 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,367 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:45:58,367 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:45:58,368 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:45:58,900 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:45:59,778 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:45:59,900 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:01,901 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:03,902 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:05,903 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:07,903 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:09,904 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:11,905 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:12,835 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:46:12,836 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:46:13,906 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:14,591 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,592 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,592 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,593 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,594 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,594 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,594 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,594 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,594 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,594 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,595 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:46:14,595 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:14,595 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:14,906 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:46:15,907 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:17,907 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:19,908 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:21,909 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:23,910 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:26,911 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:28,034 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:46:28,035 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:46:28,911 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:29,993 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:46:30,625 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,627 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,627 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,629 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,629 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,629 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,629 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,629 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,629 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,629 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,630 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:46:30,630 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:30,630 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:30,912 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:30,912 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:46:32,913 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:34,914 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:36,914 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:38,915 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:40,916 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:42,916 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:43,291 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:46:43,291 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:46:44,917 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:46,804 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:46:46,804 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:46:46,804 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:46:46,918 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:46,918 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:46:48,919 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:50,920 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:52,920 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:54,921 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:56,922 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:46:58,551 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:46:58,551 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:46:58,923 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:00,188 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:47:00,923 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:02,787 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:47:02,787 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:02,788 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:02,924 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:02,925 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:47:04,925 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:06,926 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:08,926 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:10,927 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:12,928 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:13,806 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:47:13,806 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:47:14,929 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:16,930 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:18,931 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:19,406 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,407 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,407 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,407 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,407 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,407 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,408 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,408 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,408 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,411 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:47:19,411 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:19,411 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:19,931 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:47:20,931 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:22,932 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:24,933 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:26,933 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:28,934 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:29,063 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:47:29,064 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:47:30,384 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:47:30,935 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:32,936 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:34,937 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:36,301 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:47:36,302 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:36,302 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:36,938 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:36,938 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:47:38,939 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:40,939 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:42,940 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:44,323 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:47:44,323 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:47:44,941 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:46,942 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:48,943 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:50,944 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:52,354 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:47:52,354 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:47:52,355 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:47:52,944 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:52,945 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:47:54,945 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:56,946 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:58,947 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:47:59,579 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:47:59,579 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:48:00,590 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:48:00,948 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:02,948 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:04,949 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:06,950 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:08,851 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:48:08,851 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:48:08,852 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:48:08,951 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:08,951 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:48:10,952 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:12,952 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:14,791 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:48:14,791 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:48:14,953 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:16,954 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:18,955 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:20,956 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:22,957 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:24,957 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:25,848 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:48:25,848 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:48:25,848 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:48:25,958 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:48:26,958 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:28,959 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:29,971 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:48:29,972 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:48:30,803 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:48:30,960 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:32,961 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:34,961 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:36,962 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:38,963 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:40,964 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:42,049 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:48:42,049 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:48:42,050 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:48:42,964 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:42,965 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:48:44,965 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:45,162 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:48:45,162 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:48:46,966 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:48,967 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:50,967 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:52,968 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:54,969 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:56,970 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:58,509 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:48:58,510 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:48:58,511 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:48:58,971 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:48:58,971 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:49:00,353 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:49:00,353 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:49:00,972 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:01,013 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:49:02,972 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:04,973 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:06,974 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:08,975 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:10,976 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:12,976 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:14,776 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:49:14,776 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:49:14,777 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:49:14,977 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:14,977 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:49:15,664 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:49:15,664 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:49:16,978 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:18,979 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:20,979 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:22,980 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:24,981 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:26,982 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:28,982 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:30,870 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:49:30,870 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:49:30,983 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:31,215 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:49:31,499 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:49:31,499 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:49:31,500 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:49:31,984 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:49:32,984 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:34,985 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:36,986 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:38,987 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:40,987 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:42,988 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:44,989 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:46,085 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:49:46,086 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:49:46,991 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:47,955 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:49:47,956 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:49:47,956 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:49:47,991 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:49:48,991 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:50,992 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:52,993 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:54,994 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:56,995 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:49:58,995 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:00,996 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:01,334 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 12:50:01,334 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 12:50:01,592 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:50:02,997 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:04,155 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:50:04,155 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:50:04,155 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:50:04,998 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:04,998 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:50:06,998 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:08,999 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:11,000 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:13,828 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: log_artifact
+2023-06-13 12:50:13,829 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: log_artifact
+2023-06-13 12:50:14,001 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_1.png
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_4.png
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_5.jpg
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_4.jpg
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_0.png
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_2.jpg
+2023-06-13 12:50:14,002 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_0.jpg
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_2.png
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_3.jpg
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_5.png
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_1.jpg
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_3.png
+2023-06-13 12:50:14,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images
+2023-06-13 12:50:16,207 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:16,336 INFO    Thread-21 :836891 [upload_job.py:push():95] Uploaded file /home/kais/.cache/wandb/artifacts/obj/md5/8e/5d12dda49adb4ba3a3dc45039a0008
+2023-06-13 12:50:17,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:17,356 INFO    SenderThread:836891 [sender.py:send_request_log_artifact():973] logged artifact run_duyjfwea_model - {'id': 'QXJ0aWZhY3Q6NDg1OTQwNjQ1', 'digest': '9192749bad657ca29e666f80996e7dc2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc2NDE1NTA5', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-13 12:50:17,357 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,357 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_0.jpg with policy now
+2023-06-13 12:50:17,357 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,357 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_1.jpg with policy now
+2023-06-13 12:50:17,357 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,357 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_2.jpg with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_3.jpg with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_4.jpg with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Validation_33_5.jpg with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_0.png with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_1.png with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_2.png with policy now
+2023-06-13 12:50:17,358 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,358 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_3.png with policy now
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,359 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_4.png with policy now
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: files
+2023-06-13 12:50:17,359 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file media/images/Results_33_5.png with policy now
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: history
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:50:17,359 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: telemetry
+2023-06-13 12:50:17,359 DEBUG   SenderThread:836891 [sender.py:send():235] send: exit
+2023-06-13 12:50:17,359 INFO    SenderThread:836891 [sender.py:send_exit():371] handling exit code: 0
+2023-06-13 12:50:17,359 INFO    SenderThread:836891 [sender.py:send_exit():373] handling runtime: 556
+2023-06-13 12:50:17,365 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:50:17,365 INFO    SenderThread:836891 [sender.py:send_exit():379] send defer
+2023-06-13 12:50:17,365 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:17,366 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:17,366 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 0
+2023-06-13 12:50:17,366 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:17,366 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 0
+2023-06-13 12:50:17,366 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 1
+2023-06-13 12:50:17,366 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:17,366 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 1
+2023-06-13 12:50:17,432 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:17,432 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 1
+2023-06-13 12:50:17,432 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 2
+2023-06-13 12:50:17,433 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:17,433 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 2
+2023-06-13 12:50:17,433 DEBUG   SenderThread:836891 [sender.py:send():235] send: stats
+2023-06-13 12:50:17,433 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:17,433 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 2
+2023-06-13 12:50:17,433 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 3
+2023-06-13 12:50:17,433 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:17,433 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 3
+2023-06-13 12:50:17,434 DEBUG   SenderThread:836891 [sender.py:send():235] send: summary
+2023-06-13 12:50:17,434 INFO    SenderThread:836891 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 12:50:17,434 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:17,434 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 3
+2023-06-13 12:50:17,434 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 4
+2023-06-13 12:50:17,434 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:17,434 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 4
+2023-06-13 12:50:17,434 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:17,434 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 4
+2023-06-13 12:50:17,467 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:18,003 INFO    Thread-8  :836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:50:22,568 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:23,316 INFO    Thread-33 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/kevojncf-media/images/Results_33_5.png
+2023-06-13 12:50:23,318 INFO    Thread-29 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/3c1i6v9n-media/images/Results_33_1.png
+2023-06-13 12:50:23,319 INFO    Thread-31 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/3i4equzq-media/images/Results_33_3.png
+2023-06-13 12:50:23,353 INFO    Thread-30 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/271jrg9w-media/images/Results_33_2.png
+2023-06-13 12:50:23,411 INFO    Thread-32 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/32jlowu4-media/images/Results_33_4.png
+2023-06-13 12:50:23,452 INFO    Thread-27 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/2prqiip6-media/images/Validation_33_5.jpg
+2023-06-13 12:50:23,473 INFO    Thread-22 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/3udylgug-media/images/Validation_33_0.jpg
+2023-06-13 12:50:23,534 INFO    Thread-23 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1w78przq-media/images/Validation_33_1.jpg
+2023-06-13 12:50:23,535 INFO    Thread-24 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1q13ds3j-media/images/Validation_33_2.jpg
+2023-06-13 12:50:23,544 INFO    Thread-25 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1xxjaguo-media/images/Validation_33_3.jpg
+2023-06-13 12:50:23,622 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 5
+2023-06-13 12:50:23,622 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:23,622 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:23,622 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:23,622 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 5
+2023-06-13 12:50:23,623 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:23,623 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 5
+2023-06-13 12:50:23,623 INFO    SenderThread:836891 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-06-13 12:50:23,723 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:23,765 INFO    Thread-26 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/7r9lwto6-media/images/Validation_33_4.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/config.yaml
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():313] scan: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-metadata.json wandb-metadata.json
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/requirements.txt requirements.txt
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/config.yaml config.yaml
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log output.log
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/conda-environment.yaml conda-environment.yaml
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json wandb-summary.json
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_3.jpg media/images/Labels_0_3.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_1.jpg media/images/Labels_0_1.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_1.jpg media/images/Mosaics_0_1.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_1.jpg media/images/Validation_33_1.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_5.jpg media/images/Validation_33_5.jpg
+2023-06-13 12:50:24,005 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_2.jpg media/images/Labels_0_2.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_0.png media/images/Results_33_0.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_2.jpg media/images/Mosaics_0_2.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_0.jpg media/images/Validation_33_0.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_3.jpg media/images/Validation_33_3.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_5.png media/images/Results_33_5.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Mosaics_0_0.jpg media/images/Mosaics_0_0.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_2.jpg media/images/Validation_33_2.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_2.png media/images/Results_33_2.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_0.jpg media/images/Labels_0_0.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_3.png media/images/Results_33_3.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Validation_33_4.jpg media/images/Validation_33_4.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Labels_0_4.jpg media/images/Labels_0_4.jpg
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_4.png media/images/Results_33_4.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/media/images/Results_33_1.png media/images/Results_33_1.png
+2023-06-13 12:50:24,006 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 6
+2023-06-13 12:50:24,006 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,010 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:24,010 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 6
+2023-06-13 12:50:24,010 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:24,010 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 6
+2023-06-13 12:50:24,010 INFO    SenderThread:836891 [file_pusher.py:finish():177] shutting down file pusher
+2023-06-13 12:50:24,109 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,109 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,210 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,211 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,314 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,314 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,370 INFO    Thread-28 :836891 [upload_job.py:push():137] Uploaded file /tmp/tmp1dh3cy3swandb/1gkexrn5-media/images/Results_33_0.png
+2023-06-13 12:50:24,417 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,417 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,520 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,520 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,524 INFO    Thread-35 :836891 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/config.yaml
+2023-06-13 12:50:24,530 INFO    Thread-37 :836891 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/conda-environment.yaml
+2023-06-13 12:50:24,536 INFO    Thread-36 :836891 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/output.log
+2023-06-13 12:50:24,570 INFO    Thread-34 :836891 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/requirements.txt
+2023-06-13 12:50:24,578 INFO    Thread-38 :836891 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/files/wandb-summary.json
+2023-06-13 12:50:24,623 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,623 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,726 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:24,726 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:24,779 INFO    Thread-7  :836891 [sender.py:transition_state():392] send defer: 7
+2023-06-13 12:50:24,779 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:24,780 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 7
+2023-06-13 12:50:24,780 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:24,780 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 7
+2023-06-13 12:50:24,829 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:25,655 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 8
+2023-06-13 12:50:25,656 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:25,657 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:25,657 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 8
+2023-06-13 12:50:25,657 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:25,657 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 8
+2023-06-13 12:50:25,658 INFO    SenderThread:836891 [sender.py:transition_state():392] send defer: 9
+2023-06-13 12:50:25,659 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: defer
+2023-06-13 12:50:25,659 DEBUG   SenderThread:836891 [sender.py:send():235] send: final
+2023-06-13 12:50:25,659 INFO    HandlerThread:836891 [handler.py:handle_request_defer():154] handle defer: 9
+2023-06-13 12:50:25,660 DEBUG   SenderThread:836891 [sender.py:send():235] send: footer
+2023-06-13 12:50:25,660 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: defer
+2023-06-13 12:50:25,660 INFO    SenderThread:836891 [sender.py:send_request_defer():388] handle sender defer: 9
+2023-06-13 12:50:25,759 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: poll_exit
+2023-06-13 12:50:25,760 DEBUG   SenderThread:836891 [sender.py:send_request():249] send_request: poll_exit
+2023-06-13 12:50:25,760 INFO    SenderThread:836891 [file_pusher.py:join():182] waiting for file pusher
+2023-06-13 12:50:26,073 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: get_summary
+2023-06-13 12:50:26,075 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: sampled_history
+2023-06-13 12:50:26,079 DEBUG   HandlerThread:836891 [handler.py:handle_request():131] handle_request: shutdown
+2023-06-13 12:50:26,079 INFO    HandlerThread:836891 [handler.py:finish():739] shutting down handler
+2023-06-13 12:50:26,659 INFO    WriterThread:836891 [datastore.py:close():281] close: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_124058-duyjfwea/run-duyjfwea.wandb
+2023-06-13 12:50:27,071 INFO    SenderThread:836891 [sender.py:finish():1075] shutting down sender
+2023-06-13 12:50:27,071 INFO    SenderThread:836891 [file_pusher.py:finish():177] shutting down file pusher
+2023-06-13 12:50:27,071 INFO    SenderThread:836891 [file_pusher.py:join():182] waiting for file pusher
+2023-06-13 12:50:27,072 INFO    MainThread:836891 [internal.py:handle_exit():79] Internal process exited

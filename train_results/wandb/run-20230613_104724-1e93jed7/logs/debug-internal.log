@@ -1,0 +1,60 @@
+2023-06-13 10:47:25,487 INFO    MainThread:815004 [internal.py:wandb_internal():89] W&B internal server running at pid: 815004, started at: 2023-06-13 10:47:25.487432
+2023-06-13 10:47:25,489 DEBUG   HandlerThread:815004 [handler.py:handle_request():131] handle_request: check_version
+2023-06-13 10:47:25,489 DEBUG   SenderThread:815004 [sender.py:send():235] send: header
+2023-06-13 10:47:25,489 DEBUG   SenderThread:815004 [sender.py:send_request():249] send_request: check_version
+2023-06-13 10:47:25,489 INFO    WriterThread:815004 [datastore.py:open_for_write():77] open: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/run-1e93jed7.wandb
+2023-06-13 10:47:25,542 DEBUG   SenderThread:815004 [sender.py:send():235] send: run
+2023-06-13 10:47:25,554 INFO    SenderThread:815004 [sender.py:_maybe_setup_resume():489] checking resume status for None/pytorch-demo/1e93jed7
+2023-06-13 10:47:26,090 INFO    SenderThread:815004 [dir_watcher.py:__init__():169] watching files in: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files
+2023-06-13 10:47:26,090 INFO    SenderThread:815004 [sender.py:_start_run_threads():809] run started: 1e93jed7 with start time 1686646044
+2023-06-13 10:47:26,090 DEBUG   SenderThread:815004 [sender.py:send():235] send: summary
+2023-06-13 10:47:26,090 INFO    SenderThread:815004 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2023-06-13 10:47:26,091 DEBUG   HandlerThread:815004 [handler.py:handle_request():131] handle_request: run_start
+2023-06-13 10:47:26,095 DEBUG   HandlerThread:815004 [meta.py:__init__():36] meta init
+2023-06-13 10:47:26,095 DEBUG   HandlerThread:815004 [meta.py:__init__():50] meta init done
+2023-06-13 10:47:26,095 DEBUG   HandlerThread:815004 [meta.py:probe():210] probe
+2023-06-13 10:47:26,104 DEBUG   HandlerThread:815004 [git.py:repo():33] git repository is invalid
+2023-06-13 10:47:26,104 DEBUG   HandlerThread:815004 [meta.py:_save_pip():54] save pip
+2023-06-13 10:47:26,104 DEBUG   HandlerThread:815004 [meta.py:_save_pip():68] save pip done
+2023-06-13 10:47:26,104 DEBUG   HandlerThread:815004 [meta.py:_save_conda():75] save conda
+2023-06-13 10:47:27,091 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/requirements.txt
+2023-06-13 10:47:27,091 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/wandb-summary.json
+2023-06-13 10:47:27,091 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/conda-environment.yaml
+2023-06-13 10:47:32,092 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:34,094 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:34,094 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/conda-environment.yaml
+2023-06-13 10:47:34,253 DEBUG   HandlerThread:815004 [meta.py:_save_conda():85] save conda done
+2023-06-13 10:47:34,254 DEBUG   HandlerThread:815004 [meta.py:probe():248] probe done
+2023-06-13 10:47:34,430 DEBUG   HandlerThread:815004 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 10:47:34,431 DEBUG   SenderThread:815004 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 10:47:34,603 DEBUG   SenderThread:815004 [sender.py:send():235] send: files
+2023-06-13 10:47:34,605 INFO    SenderThread:815004 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2023-06-13 10:47:35,105 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:35,105 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_created():217] file/dir created: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/wandb-metadata.json
+2023-06-13 10:47:35,137 INFO    Thread-11 :815004 [upload_job.py:push():137] Uploaded file /tmp/tmpgtp58i3wwandb/12nr2ykj-wandb-metadata.json
+2023-06-13 10:47:38,637 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:47,412 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:49,527 INFO    Thread-8  :815004 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:49,619 DEBUG   HandlerThread:815004 [handler.py:handle_request():131] handle_request: stop_status
+2023-06-13 10:47:49,619 DEBUG   SenderThread:815004 [sender.py:send_request():249] send_request: stop_status
+2023-06-13 10:47:54,526 WARNING MainThread:815004 [internal.py:is_dead():380] Internal process exiting, parent pid 814822 disappeared
+2023-06-13 10:47:54,527 ERROR   MainThread:815004 [internal.py:wandb_internal():148] Internal process shutdown.
+2023-06-13 10:47:54,568 INFO    WriterThread:815004 [datastore.py:close():281] close: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/run-1e93jed7.wandb
+2023-06-13 10:47:54,625 INFO    HandlerThread:815004 [handler.py:finish():739] shutting down handler
+2023-06-13 10:47:54,925 INFO    SenderThread:815004 [sender.py:finish():1075] shutting down sender
+2023-06-13 10:47:54,925 INFO    SenderThread:815004 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-06-13 10:47:55,529 INFO    SenderThread:815004 [dir_watcher.py:finish():313] scan: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files
+2023-06-13 10:47:55,529 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/wandb-metadata.json wandb-metadata.json
+2023-06-13 10:47:55,530 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/requirements.txt requirements.txt
+2023-06-13 10:47:55,530 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/config.yaml config.yaml
+2023-06-13 10:47:55,530 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log output.log
+2023-06-13 10:47:55,530 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/conda-environment.yaml conda-environment.yaml
+2023-06-13 10:47:55,531 INFO    SenderThread:815004 [dir_watcher.py:finish():327] scan save: /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/wandb-summary.json wandb-summary.json
+2023-06-13 10:47:55,537 INFO    SenderThread:815004 [file_pusher.py:finish():177] shutting down file pusher
+2023-06-13 10:47:55,537 INFO    SenderThread:815004 [file_pusher.py:join():182] waiting for file pusher
+2023-06-13 10:47:56,133 INFO    Thread-14 :815004 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/output.log
+2023-06-13 10:47:56,143 INFO    Thread-12 :815004 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/requirements.txt
+2023-06-13 10:47:56,146 INFO    Thread-16 :815004 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/wandb-summary.json
+2023-06-13 10:47:56,147 INFO    Thread-13 :815004 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/config.yaml
+2023-06-13 10:47:56,180 INFO    Thread-15 :815004 [upload_job.py:push():137] Uploaded file /home/kais/workspace/pytorch-meetup/train/wandb/run-20230613_104724-1e93jed7/files/conda-environment.yaml
+2023-06-13 10:47:56,695 INFO    MainThread:815004 [internal.py:handle_exit():79] Internal process exited
